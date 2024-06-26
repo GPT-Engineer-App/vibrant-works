@@ -1,18 +1,18 @@
-import { Container, VStack, Heading, Text, Box, Image, SimpleGrid, Flex } from "@chakra-ui/react";
+import { Container, VStack, Heading, Text, Box, Image, SimpleGrid, Flex, Grid, GridItem } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Index = () => {
   return (
-    <Container maxW="container.xl" p={4}>
+    <Container maxW="container.xl" p={4} bg="#1a202c" color="white">
       <VStack spacing={10} align="stretch">
         {/* Hero Section */}
-        <Box textAlign="center" py={10} bg="gray.100" borderRadius="md">
+        <Box textAlign="center" py={10} bg="#2d3748" borderRadius="md">
           <Heading as="h1" size="2xl" mb={4}>Welcome to My Portfolio</Heading>
           <Text fontSize="xl">Showcasing my works and projects</Text>
         </Box>
 
         {/* About Me Section */}
-        <Box>
+        <Box bg="#2d3748" p={5} borderRadius="md">
           <Heading as="h2" size="xl" mb={4}>About Me</Heading>
           <Flex direction={{ base: "column", md: "row" }} align="center">
             <Image
@@ -30,20 +30,20 @@ const Index = () => {
         </Box>
 
         {/* Works Section */}
-        <Box>
+        <Box bg="#2d3748" p={5} borderRadius="md">
           <Heading as="h2" size="xl" mb={4}>My Works</Heading>
           <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10}>
-            <Box bg="gray.100" p={5} borderRadius="md">
+            <Box bg="#4a5568" p={5} borderRadius="md">
               <Image src="/images/work1.jpg" alt="Work 1" mb={3} borderRadius="md" />
               <Heading as="h3" size="md">Project Title 1</Heading>
               <Text mt={2}>Brief description of the project.</Text>
             </Box>
-            <Box bg="gray.100" p={5} borderRadius="md">
+            <Box bg="#4a5568" p={5} borderRadius="md">
               <Image src="/images/work2.jpg" alt="Work 2" mb={3} borderRadius="md" />
               <Heading as="h3" size="md">Project Title 2</Heading>
               <Text mt={2}>Brief description of the project.</Text>
             </Box>
-            <Box bg="gray.100" p={5} borderRadius="md">
+            <Box bg="#4a5568" p={5} borderRadius="md">
               <Image src="/images/work3.jpg" alt="Work 3" mb={3} borderRadius="md" />
               <Heading as="h3" size="md">Project Title 3</Heading>
               <Text mt={2}>Brief description of the project.</Text>
@@ -52,7 +52,7 @@ const Index = () => {
         </Box>
 
         {/* Contact Section */}
-        <Box textAlign="center" py={10} bg="gray.100" borderRadius="md">
+        <Box textAlign="center" py={10} bg="#2d3748" borderRadius="md">
           <Heading as="h2" size="xl" mb={4}>Get in Touch</Heading>
           <Text fontSize="lg" mb={4}>Feel free to reach out to me on any of the platforms below:</Text>
           <Flex justify="center" spacing={4}>
